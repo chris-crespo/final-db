@@ -1,13 +1,14 @@
 create table if not exists kid (
-    dni        char(9),
-    first_name varchar(20),
+    dni        char(9)     not null,
+    first_name varchar(20) not null,
     last_name  varchar(20),
-    age        int
+    age        int         not null
 );
 
 create table if not exists app_user (
-    username   varchar(20),
+    username   varchar(20) not null,
     email      varchar(30),
+    password   varchar(20) not null,
     first_name varchar(20),
     last_name  varchar(20),
     address    varchar(30),
@@ -16,7 +17,7 @@ create table if not exists app_user (
 
 create table if not exists instructor (
     dni        char(9),
-    first_name varchar(20),
+    first_name varchar(20) not null,
     last_name  varchar(20),
     address    varchar(30),
     phone      char(9),
@@ -26,8 +27,8 @@ create table if not exists instructor (
 
 create table if not exists camp (
     id          serial,
-    camp_name   varchar(20),
-    kind        varchar(20),
+    camp_name   varchar(20) not null,
+    kind        varchar(20) not null,
     description text,
     location    varchar(30),
     start_date  date,
@@ -43,13 +44,13 @@ create table if not exists camp_lang (
 
 create table if not exists booking (
     kid        char(9),
-    user_email varchar(30), 
+    user_email varchar(30) not null, 
     camp       int
 );
 
 create table if not exists activity (
     act_name    varchar(20),
-    kind        varchar(20),
+    kind        varchar(20) not null,
     description text
 );
 
