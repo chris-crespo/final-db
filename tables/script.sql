@@ -11,7 +11,6 @@ create table if not exists app_user (
     password   varchar(20) not null,
     first_name varchar(20),
     last_name  varchar(20),
-    address    varchar(30),
     phone      char(9)
 );
 
@@ -19,7 +18,6 @@ create table if not exists instructor (
     dni        char(9),
     first_name varchar(20) not null,
     last_name  varchar(20),
-    address    varchar(30),
     phone      char(9),
     camp       int,
     activity   varchar(10)
