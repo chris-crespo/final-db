@@ -1,8 +1,9 @@
 create table if not exists kid (
-    dni        char(9)     not null,
-    first_name varchar(20) not null,
+    dni        char(9)      not null,
+    first_name varchar(20)  not null,
     last_name  varchar(20),
-    age        int         not null
+    age        int          not null,
+    app_user   varchar(30)
 );
 
 create table if not exists app_user (
@@ -62,6 +63,10 @@ alter table activity   add constraint activity_pk  primary key (act_name);
 alter table camp_lang  add constraint camp_lang_pk primary key (camp, lang);
 
 -- FKs
+alter table kid
+add constraint kid_user_fk
+foreign key (app_user) references app_user(email);
+
 alter table instructor
 add constraint instructor_camp_fk
 foreign key (camp) references camp(id);
