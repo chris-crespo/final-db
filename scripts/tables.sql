@@ -41,6 +41,10 @@ create table if not exists camp_lang (
     lang varchar(15)
 );
 
+create table if not exists camp_kind (
+    kind varchar(20)
+);
+
 create table if not exists booking (
     kid        char(9),
     user_email varchar(30) not null, 
@@ -61,11 +65,16 @@ alter table camp       add constraint camp_pk      primary key (id);
 alter table booking    add constraint booking_pk   primary key (kid, camp);
 alter table activity   add constraint activity_pk  primary key (act_name);
 alter table camp_lang  add constraint camp_lang_pk primary key (camp, lang);
+alter table camp_kind  add constraint camp_kind_pk primary key (kind);
 
 -- FKs
 alter table kid
 add constraint kid_user_fk
 foreign key (app_user) references app_user(email);
+
+alter table camp
+add constraint camp_kind_fk
+foreign key (kind) references camp_kind(kind);
 
 alter table instructor
 add constraint instructor_camp_fk
