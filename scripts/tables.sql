@@ -3,13 +3,13 @@ create table if not exists kid (
     first_name varchar(20)  not null,
     last_name  varchar(20),
     age        int          not null,
-    app_user   varchar(30)
+    app_user   varchar(50)
 );
 
 create table if not exists app_user (
     username   varchar(20) not null,
-    email      varchar(30),
-    password   varchar(20) not null,
+    email      varchar(50),
+    password   varchar(50) not null,
     first_name varchar(20),
     last_name  varchar(20),
     phone      char(9)
