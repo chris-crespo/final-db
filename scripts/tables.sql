@@ -9,7 +9,7 @@ create table if not exists kid (
 create table if not exists app_user (
     username   varchar(20) unique not null,
     email      varchar(50),
-    password   varchar(50) not null,
+    password   char(60)    not null,
     first_name varchar(20),
     last_name  varchar(20),
     phone      char(9)
