@@ -53,19 +53,24 @@ create table if not exists booking (
 
 create table if not exists activity (
     act_name    varchar(20),
-    kind        varchar(20) not null,
     description text
 );
 
+create table if not exists camp_activity (
+    camp     int,
+    activity varchar(20)
+);
+
 -- PKs
-alter table kid        add constraint kid_pk       primary key (dni);
-alter table app_user   add constraint user_pk      primary key (email);
-alter table instructor add constraint dni_pk       primary key (dni);
-alter table camp       add constraint camp_pk      primary key (id);
-alter table booking    add constraint booking_pk   primary key (kid, camp);
-alter table activity   add constraint activity_pk  primary key (act_name);
-alter table camp_lang  add constraint camp_lang_pk primary key (camp, lang);
-alter table camp_kind  add constraint camp_kind_pk primary key (kind);
+alter table kid           add constraint kid_pk           primary key (dni);
+alter table app_user      add constraint user_pk          primary key (email);
+alter table instructor    add constraint dni_pk           primary key (dni);
+alter table camp          add constraint camp_pk          primary key (id);
+alter table booking       add constraint booking_pk       primary key (kid, camp);
+alter table activity      add constraint activity_pk      primary key (act_name);
+alter table camp_lang     add constraint camp_lang_pk     primary key (camp, lang);
+alter table camp_kind     add constraint camp_kind_pk     primary key (kind);
+alter table camp_activity add constraint camp_activity_pk primary key (camp, activity);
 
 -- FKs
 alter table kid
@@ -95,3 +100,11 @@ foreign key (kid) references kid(dni);
 alter table booking
 add constraint booking_camp_fk
 foreign key (camp) references camp(id);
+
+alter table camp_activity 
+add constraint camp_activity_camp_fk
+foreign key (camp) references camp(id);
+
+alter table camp_activity 
+add constraint camp_activity_activity_fk
+foreign key (activity) references activity(act_name);
