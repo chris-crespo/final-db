@@ -34,11 +34,11 @@ insert into camp_lang values (6, 'Inglés');
 insert into camp_lang values (7, 'Español');
 insert into camp_lang values (7, 'Chino');
 
-insert into app_user values ('1daw3',     '1daw3@plaiaundi.net',     '$2a$12$qfxCgEdciLOeFdPZlLMcru3fqHkgwwtxAOxcKjCiZiKkNiq0zLq.O', 'unode', 'dautres', '600000000');
-insert into app_user values ('cartwheel', 'cartwheel@cartwheel.com', '$2a$12$kbf1NPIFGMK7Faxt2/SdXur8VzEl6FEC8JIyVrMcx1/r1hqjWY1NO', 'cart',  'wheel',   '600030000');
-insert into app_user values ('soybeans',  'soybeans@soybeans.com',   '$2a$12$OFCYH1Er1n3UnVdQjPb9KeOtzLu3rhgMg/fI0ahlDuc0x7j.bibNm', 'soy',   'beans',   '612312858');
-insert into app_user values ('croissant', 'croissant@croissant.com', '$2a$12$AZR0dKCCPt8VXsDaiOAY5.CVaeSnUHWML7ARvrvp0E1vGVZh7/ezq', 'croi',  'sant',    '602123942');
-insert into app_user values ('cowwebbee', 'cowwebbee@cowwebbee.com', '$2a$12$jQJB/ucaqPo6c5kOVZ/QLORvqcJtHDg58b7JHaxA.aXQBoKo2kRtq', 'cow',   'webbee',  '622322983');
+insert into app_user values ('1daw3',     '1daw3@plaiaundi.net',     'c25d05b9505b5a0003848a98c9274d38d0eb13a8228447f8431d19aa2d21577a', 'unode', 'dautres', '600000000');
+insert into app_user values ('cartwheel', 'cartwheel@cartwheel.com', 'cf4acf22b95a6867d75356a7912da0f975bd9404a2825e140413e6a7e980fb91', 'cart',  'wheel',   '600030000');
+insert into app_user values ('soybeans',  'soybeans@soybeans.com',   '452d3e2264a6eda2d0cf808a0e301c6d089a7674af2ccbaa12488e1ddf742e9e', 'soy',   'beans',   '612312858');
+insert into app_user values ('croissant', 'croissant@croissant.com', 'fbb1eeb89d064f2680346a80fc5c249bde3f73179ebd955b226aadf6d9abec7b', 'croi',  'sant',    '602123942');
+insert into app_user values ('cowwebbee', 'cowwebbee@cowwebbee.com', 'ed7fa9ff70ba860f6271ca8d2955d544ec0b3f6eedfa36d6b701b89d5c76f7dc', 'cow',   'webbee',  '622322983');
 
 insert into kid values ('12213203A', 'Celyn',        'Stephenson', 10, '1daw3@plaiaundi.net');
 insert into kid values ('12313131A', 'Randall',      'Jacobs',     8,  '1daw3@plaiaundi.net');
