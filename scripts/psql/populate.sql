@@ -1,6 +1,6 @@
 do $$
 declare
-    kinds varchar(20)[] := array['Acuático', 'Arte', 'Aventuras', 'Música', 'Tecnología'];
+    kinds varchar(20)[] := array['Acuatic', 'Adventure', 'Art', 'Music', 'Tecnology'];
     kind varchar(20);
 begin
     foreach kind in array kinds loop
@@ -9,30 +9,30 @@ begin
 end$$;
 
 insert into camp (camp_name, kind, description, location, start_date, end_date, min_age, max_age) 
-values ('Picasso', 'Arte', 'Descricpión...', 'Madrid', date '2022-07-10', date '2022-08-02', 10, 12);
+values ('Picasso', 'Art', 'Descricpión...', 'Paris', date '2022-07-10', date '2022-08-02', 10, 12);
 insert into camp (camp_name, kind, description, location, start_date, end_date, min_age, max_age) 
-values ('Jupiter', 'Tecnología', 'Descricpión...', 'Barcelona', date '2022-07-03', date '2022-07-28', 14, 16);
+values ('Jupiter', 'Technology', 'Descricpión...', 'Atlanta', date '2022-07-03', date '2022-07-28', 14, 16);
 insert into camp (camp_name, kind, description, location, start_date, end_date, min_age, max_age) 
-values ('AcuaCamp', 'Acuático', 'Descricpión...', 'Barcelona', date '2022-07-10', date '2022-08-02', 4, 10);
+values ('AcuaCamp', 'Acuatic', 'Descricpión...', 'Barcelona', date '2022-07-10', date '2022-08-02', 4, 10);
 insert into camp (camp_name, kind, description, location, start_date, end_date, min_age, max_age) 
-values ('The Rolling Stones', 'Música', 'Descricpión...', 'Valencia', date '2022-07-10', date '2022-08-02', 10, 12);
+values ('The Rolling Stones', 'Music', 'Descricpión...', 'London', date '2022-07-10', date '2022-08-02', 10, 12);
 insert into camp (camp_name, kind, description, location, start_date, end_date, min_age, max_age) 
-values ('Jb''s Cabaret', 'Música', 'sdlfj', 'Madrid', date '2022-07-10', date '2022-08-02', 8, 14);
+values ('Jb''s Cabaret', 'Music', 'sdlfj', 'New York', date '2022-07-10', date '2022-08-02', 8, 14);
 insert into camp (camp_name, kind, description, location, start_date, end_date, min_age, max_age) 
-values ('Trek on the Go', 'Aventuras', 'skldfjs...', 'Barcelona', date '2022-07-10', date '2022-08-02', 12, 16);
+values ('Trek on the Go', 'Adventure', 'skldfjs...', 'Sao Paulo', date '2022-07-10', date '2022-08-02', 12, 16);
 insert into camp (camp_name, kind, description, location, start_date, end_date, min_age, max_age) 
-values ('Yongji & Lee', 'Arte', '不要帶我們吃的寵物', 'Sevilla', date '2022-06-15', date '2022-07-02', 6, 16);
+values ('Yongji & Lee', 'Art', '不要帶我們吃的寵物', 'Hong Kong', date '2022-06-15', date '2022-07-02', 6, 16);
 
-insert into camp_lang values (1, 'Español');
-insert into camp_lang values (2, 'Español');
-insert into camp_lang values (2, 'Inglés');
-insert into camp_lang values (3, 'Español');
-insert into camp_lang values (4, 'Español');
-insert into camp_lang values (4, 'Inglés');
-insert into camp_lang values (5, 'Inglés');
-insert into camp_lang values (6, 'Inglés');
-insert into camp_lang values (7, 'Español');
-insert into camp_lang values (7, 'Chino');
+insert into camp_lang values (1, 'Spanish');
+insert into camp_lang values (2, 'Spanish');
+insert into camp_lang values (2, 'English');
+insert into camp_lang values (3, 'Spanish');
+insert into camp_lang values (4, 'Spanish');
+insert into camp_lang values (4, 'English');
+insert into camp_lang values (5, 'English');
+insert into camp_lang values (6, 'English');
+insert into camp_lang values (7, 'Spanish');
+insert into camp_lang values (7, 'Chinese');
 
 insert into app_user values ('1daw3',     '1daw3@plaiaundi.net',     'c25d05b9505b5a0003848a98c9274d38d0eb13a8228447f8431d19aa2d21577a', 'unode', 'dautres', '600000000');
 insert into app_user values ('cartwheel', 'cartwheel@cartwheel.com', 'cf4acf22b95a6867d75356a7912da0f975bd9404a2825e140413e6a7e980fb91', 'cart',  'wheel',   '600030000');
