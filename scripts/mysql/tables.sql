@@ -21,7 +21,7 @@ create table if not exists instructor (
     last_name  varchar(20),
     phone      char(9),
     camp       bigint unsigned,
-    activity   varchar(10)
+    activity   varchar(20)
 );
 
 create table if not exists camp (
@@ -52,8 +52,7 @@ create table if not exists booking (
 );
 
 create table if not exists activity (
-    act_name    varchar(20),
-    description text
+    act_name varchar(20)
 );
 
 create table if not exists camp_activity (
