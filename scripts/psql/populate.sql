@@ -1,6 +1,6 @@
 do $$
 declare
-    kinds varchar(20)[] := array['Acuatic', 'Adventure', 'Art', 'Music', 'Tecnology'];
+    kinds varchar(20)[] := array['Acuatic', 'Adventure', 'Art', 'Music', 'Technology'];
     kind varchar(20);
 begin
     foreach kind in array kinds loop
