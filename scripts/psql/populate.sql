@@ -9,17 +9,17 @@ begin
 end$$;
 
 insert into camp (camp_name, kind, description, location, start_date, end_date, min_age, max_age) 
-values ('Picasso', 'Art', 'Descricpión...', 'Paris', date '2022-07-10', date '2022-08-02', 10, 12);
+values ('Picasso', 'Art', 'A camp full of creativity for kids who love to draw', 'Paris', date '2022-07-10', date '2022-08-02', 10, 12);
 insert into camp (camp_name, kind, description, location, start_date, end_date, min_age, max_age) 
-values ('Jupiter', 'Technology', 'Descricpión...', 'Atlanta', date '2022-07-03', date '2022-07-28', 14, 16);
+values ('Jupiter', 'Technology', 'The Jupiter Summer Camp is a week-long technology camp for high school students. Students learn how to program robots from scratch using the Google AI platform.', 'Atlanta', date '2022-07-03', date '2022-07-28', 14, 16);
 insert into camp (camp_name, kind, description, location, start_date, end_date, min_age, max_age) 
-values ('AcuaCamp', 'Acuatic', 'Descricpión...', 'Barcelona', date '2022-07-10', date '2022-08-02', 4, 10);
+values ('AcuaCamp', 'Acuatic', 'Acuapark is a summer camp for young people who wish to learn and experience the joy and beauty of the sea. The camp is located in the middle of the Bohinj National Park and is the only camp in Slovenia that is solely dedicated to sea activities.', 'Slovenia', date '2022-07-10', date '2022-08-02', 4, 10);
 insert into camp (camp_name, kind, description, location, start_date, end_date, min_age, max_age) 
-values ('The Rolling Stones', 'Music', 'Descricpión...', 'London', date '2022-07-10', date '2022-08-02', 10, 12);
+values ('The Rolling Stones', 'Music', 'The Rolling Stones camp is a music summer camp program for kids and teens. With music tutors and a jam session for every day of camp, campers will learn and enjoy the art of playing guitar and more.', 'London', date '2022-07-10', date '2022-08-02', 8, 16);
 insert into camp (camp_name, kind, description, location, start_date, end_date, min_age, max_age) 
-values ('Jb''s Cabaret', 'Music', 'sdlfj', 'New York', date '2022-07-10', date '2022-08-02', 8, 14);
+values ('Jb''s Cabaret', 'Music', 'Jb''s Cabaret is the first of its kind and it is a major step in the right direction for the music industry. This camp is meant to provide top-notch training in a fun, safe and structured environment.', 'New York', date '2022-07-10', date '2022-08-02', 8, 14);
 insert into camp (camp_name, kind, description, location, start_date, end_date, min_age, max_age) 
-values ('Trek on the Go', 'Adventure', 'skldfjs...', 'Sao Paulo', date '2022-07-10', date '2022-08-02', 12, 16);
+values ('Trek on the Go', 'Adventure', 'A summer camp for kids to explore the great outdoors! Come for a week of fun and adventure. Students will live on the property and participate in group activities and games.', 'Sao Paulo', date '2022-07-10', date '2022-08-02', 12, 16);
 insert into camp (camp_name, kind, description, location, start_date, end_date, min_age, max_age) 
 values ('Yongji & Lee', 'Art', '不要帶我們吃的寵物', 'Hong Kong', date '2022-06-15', date '2022-07-02', 6, 16);
 
